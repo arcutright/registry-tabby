@@ -166,6 +166,30 @@
     "sha256": "36eb025121a50ee6d37fe900659393ff8fb5ea34adc0e3c11fc635e07624dcdb"
   },
   {
+    "name": "DeepseekCoder-6.7B-instruct-Q2",
+    "license_name": "Deepseek License",
+    "license_url": "https://github.com/deepseek-ai/deepseek-coder/blob/main/LICENSE-MODEL",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "provider_url": "https://huggingface.co/TheBloke/deepseek-coder-6.7B-instruct-GGUF",
+    "urls": [
+      "https://huggingface.co/TheBloke/deepseek-coder-6.7B-instruct-GGUF/resolve/main/deepseek-coder-6.7b-instruct.Q2_K.gguf"
+    ],
+    "sha256": "56447b37bd7c606c081d9b216b69c6cd77db6b473721b709a7b21ed4606e4960"
+  },
+  {
+    "name": "DeepseekCoder-6.7B-instruct-Q3_S",
+    "license_name": "Deepseek License",
+    "license_url": "https://github.com/deepseek-ai/deepseek-coder/blob/main/LICENSE-MODEL",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "provider_url": "https://huggingface.co/TheBloke/deepseek-coder-6.7B-instruct-GGUF",
+    "urls": [
+      "https://huggingface.co/TheBloke/deepseek-coder-6.7B-instruct-GGUF/resolve/main/deepseek-coder-6.7b-instruct.Q3_K_S.gguf"
+    ],
+    "sha256": "176ed1c984911dfb1707e85e4f56b8ab6986f21eec9fc7d6a31d5e3cce141e52"
+  },
+  {
     "name": "DeepseekCoder-6.7B-instruct-Q3_M",
     "license_name": "Deepseek License",
     "license_url": "https://github.com/deepseek-ai/deepseek-coder/blob/main/LICENSE-MODEL",
@@ -178,6 +202,30 @@
     "sha256": "6c841fde94b9103c92e875c9ab0ebeeb624b0709b2410c3bd942c80cd635117f"
   },
   {
+    "name": "DeepseekCoder-6.7B-instruct-Q3_L",
+    "license_name": "Deepseek License",
+    "license_url": "https://github.com/deepseek-ai/deepseek-coder/blob/main/LICENSE-MODEL",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "provider_url": "https://huggingface.co/TheBloke/deepseek-coder-6.7B-instruct-GGUF",
+    "urls": [
+      "https://huggingface.co/TheBloke/deepseek-coder-6.7B-instruct-GGUF/resolve/main/deepseek-coder-6.7b-instruct.Q3_K_L.gguf"
+    ],
+    "sha256": "9e3f820f623d5177ae4b7334cb6a8bfe8c562d7a088722dbd5a1f889845f462e"
+  },
+  {
+    "name": "DeepseekCoder-6.7B-instruct-Q4_S",
+    "license_name": "Deepseek License",
+    "license_url": "https://github.com/deepseek-ai/deepseek-coder/blob/main/LICENSE-MODEL",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "provider_url": "https://huggingface.co/TheBloke/deepseek-coder-6.7B-instruct-GGUF",
+    "urls": [
+      "https://huggingface.co/TheBloke/deepseek-coder-6.7B-instruct-GGUF/resolve/main/deepseek-coder-6.7b-instruct.Q4_K_S.gguf"
+    ],
+    "sha256": "d5d4b757645ce359a52d25584d29f1ff0d89580075edc35d87a20b89e65a5313"
+  },
+  {
     "name": "DeepseekCoder-6.7B-instruct-Q4_M",
     "license_name": "Deepseek License",
     "license_url": "https://github.com/deepseek-ai/deepseek-coder/blob/main/LICENSE-MODEL",
@@ -188,6 +236,18 @@
       "https://huggingface.co/TheBloke/deepseek-coder-6.7B-instruct-GGUF/resolve/main/deepseek-coder-6.7b-instruct.Q4_K_M.gguf"
     ],
     "sha256": "92da6238854f2fa902d8b2ad79d548536af1d3ab06821f323bd5bbcea2013276"
+  },
+  {
+    "name": "DeepseekCoder-6.7B-instruct-Q5_S",
+    "license_name": "Deepseek License",
+    "license_url": "https://github.com/deepseek-ai/deepseek-coder/blob/main/LICENSE-MODEL",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "chat_template": "You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "provider_url": "https://huggingface.co/TheBloke/deepseek-coder-6.7B-instruct-GGUF",
+    "urls": [
+      "https://huggingface.co/TheBloke/deepseek-coder-6.7B-instruct-GGUF/resolve/main/deepseek-coder-6.7b-instruct.Q5_K_S.gguf"
+    ],
+    "sha256": "1362c06f3036b4c4994bd8497ecbc0b487acb67e568b4addb4b17fc1e863f688"
   },
   {
     "name": "DeepseekCoder-6.7B-instruct-Q5_M",
@@ -290,7 +350,7 @@
     "license_name": "Apache 2.0 license",
     "license_url": "https://huggingface.co/openlm-research/open_llama_3b_v2",
     "prompt_template": "<PRE> {prefix} <SUF>{suffix} <MID>",
-    "chat_template": "You are an AI programming assistant, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### HUMAN:\n' + message['content'] + '\n### RESPONSE:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "chat_template": "You are an AI programming assistant, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### HUMAN:\n' + message['content'] + '\n\n### RESPONSE:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
     "provider_url": "https://huggingface.co/TheBloke/open-llama-3b-v2-wizard-evol-instuct-v2-196k-GGUF",
     "urls": [
       "https://huggingface.co/TheBloke/open-llama-3b-v2-wizard-evol-instuct-v2-196k-GGUF/resolve/main/open-llama-3b-v2-wizard-evol-instuct-v2-196k.Q3_K_M.gguf"
@@ -302,7 +362,7 @@
     "license_name": "Apache 2.0 license",
     "license_url": "https://huggingface.co/openlm-research/open_llama_3b_v2",
     "prompt_template": "<PRE> {prefix} <SUF>{suffix} <MID>",
-    "chat_template": "You are an AI programming assistant, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### HUMAN:\n' + message['content'] + '\n### RESPONSE:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "chat_template": "You are an AI programming assistant, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### HUMAN:\n' + message['content'] + '\n\n### RESPONSE:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
     "provider_url": "https://huggingface.co/TheBloke/open-llama-3b-v2-wizard-evol-instuct-v2-196k-GGUF",
     "urls": [
       "https://huggingface.co/TheBloke/open-llama-3b-v2-wizard-evol-instuct-v2-196k-GGUF/resolve/main/open-llama-3b-v2-wizard-evol-instuct-v2-196k.Q4_K_M.gguf"
@@ -314,7 +374,7 @@
     "license_name": "Apache 2.0 license",
     "license_url": "https://huggingface.co/openlm-research/open_llama_3b_v2",
     "prompt_template": "<PRE> {prefix} <SUF>{suffix} <MID>",
-    "chat_template": "You are an AI programming assistant, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### HUMAN:\n' + message['content'] + '\n### RESPONSE:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "chat_template": "You are an AI programming assistant, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### HUMAN:\n' + message['content'] + '\n\n### RESPONSE:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
     "provider_url": "https://huggingface.co/TheBloke/open-llama-3b-v2-wizard-evol-instuct-v2-196k-GGUF",
     "urls": [
       "https://huggingface.co/TheBloke/open-llama-3b-v2-wizard-evol-instuct-v2-196k-GGUF/resolve/main/open-llama-3b-v2-wizard-evol-instuct-v2-196k.Q5_K_M.gguf"
@@ -326,7 +386,7 @@
     "license_name": "Apache 2.0 license",
     "license_url": "https://huggingface.co/openlm-research/open_llama_3b_v2",
     "prompt_template": "<PRE> {prefix} <SUF>{suffix} <MID>",
-    "chat_template": "You are an AI programming assistant, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### HUMAN:\n' + message['content'] + '\n### RESPONSE:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "chat_template": "You are an AI programming assistant, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### HUMAN:\n' + message['content'] + '\n\n### RESPONSE:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
     "provider_url": "https://huggingface.co/TheBloke/open-llama-3b-v2-wizard-evol-instuct-v2-196k-GGUF",
     "urls": [
       "https://huggingface.co/TheBloke/open-llama-3b-v2-wizard-evol-instuct-v2-196k-GGUF/resolve/main/open-llama-3b-v2-wizard-evol-instuct-v2-196k.Q6_K.gguf"
@@ -338,7 +398,7 @@
     "license_name": "Apache 2.0 license",
     "license_url": "https://huggingface.co/openlm-research/open_llama_3b_v2",
     "prompt_template": "<PRE> {prefix} <SUF>{suffix} <MID>",
-    "chat_template": "You are an AI programming assistant, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### HUMAN:\n' + message['content'] + '\n### RESPONSE:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "chat_template": "You are an AI programming assistant, and you only answer questions related to computer science.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### HUMAN:\n' + message['content'] + '\n\n### RESPONSE:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
     "provider_url": "https://huggingface.co/TheBloke/open-llama-3b-v2-wizard-evol-instuct-v2-196k-GGUF",
     "urls": [
       "https://huggingface.co/TheBloke/open-llama-3b-v2-wizard-evol-instuct-v2-196k-GGUF/resolve/main/open-llama-3b-v2-wizard-evol-instuct-v2-196k.Q8_0.gguf"
